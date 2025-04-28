@@ -1,6 +1,32 @@
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+:root {
+    --jat-title-font: 'Bebas Neue', sans-serif;
+    --jat-body-font: 'Montserrat', sans-serif;
+
+    --jat-dark-color: #212121;
+    --jat-light-color: #DEEEFB;
+    --jat-font-size: 1.1rem;
 }
+
+html, body {
+    font-family: var(--jat-body-font);
+    font-size: var(--jat-font-size);
+    height: 100%;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--jat-title-font);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--jat-title-font);
+}
+
+#app {
+    height: 100%;
+}
+
+/* #region Blazor default css */
 
 h1:focus {
     outline: none;
@@ -101,3 +127,5 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+/* #endregion Blazor default css */

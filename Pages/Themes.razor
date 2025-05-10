@@ -1,0 +1,50 @@
+﻿@page "/themes"
+
+<PageTitle>Template Themes</PageTitle>
+
+<div class="mt-5">
+	<h1 class="text-center">Built in themes for your template</h1>
+
+	<div class="d-flex flex-wrap gap-3 align-items-center justify-content-center my-3">
+		@foreach (var theme in templateThemes)
+		{
+			<div class="card" data-cf-theme="@theme">
+
+			</div>
+		}
+	</div>
+</div>
+
+@code {
+	private List<string> templateThemes = new()
+	{
+		"code-magic",
+		"blue",
+		"indigo",
+		"purple",
+		"pink",
+		"red",
+		"orange",
+		"yellow",
+		"green",
+		"teal",
+		"cyan",
+		"gray"
+	};
+
+	private List<string> templateWeights = new()
+	{
+		"core",
+		"100",
+		"150",
+		"200",
+		"300",
+		"400",
+		"500",
+		"600",
+		"700",
+		"800",
+		"850",
+		"900"
+	};
+}

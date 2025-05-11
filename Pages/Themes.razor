@@ -9,7 +9,35 @@
 		@foreach (var theme in templateThemes)
 		{
 			<div class="card" data-cf-theme="@theme">
+				<div class="card-body">
+					<h3 class="card-title d-flex align-items-center">
+						Theme:&nbsp;<span style="color: var(--cf-theme-core);">@theme</span>
+						<button class="ms-auto btn btn-sm btn-primary">Set Theme</button>
+					</h3>
+					<h6 class="small fw-bold mt-3">Palette</h6>
+					<div class="d-flex gap-0 align-items-center">
+						@foreach (var weight in templateWeights)
+						{
+							<div style="background-color: var(--cf-theme-@weight); width: 16px; height: 16px;">
 
+							</div>
+						}
+					</div>
+					<div class="my-3">
+						<button class="btn btn-primary m-2">
+							Primary Button
+						</button>
+						<button class="btn btn-light m-2">
+							Light Button
+						</button>
+						<button class="btn btn-dark m-2">
+							Dark Button
+						</button>
+					</div>
+					<div>
+						Text with a <a href="#">clickable link</a> in the moddle.
+					</div>
+				</div>
 			</div>
 		}
 	</div>

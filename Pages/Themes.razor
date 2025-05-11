@@ -1,4 +1,5 @@
 ﻿@page "/themes"
+@inject IJSRuntime JS
 
 <PageTitle>Template Themes</PageTitle>
 
@@ -12,7 +13,7 @@
 				<div class="card-body">
 					<h3 class="card-title d-flex align-items-center">
 						Theme:&nbsp;<span style="color: var(--cf-theme-core);">@theme</span>
-						<button class="ms-auto btn btn-sm btn-primary">Set Theme</button>
+						<button class="ms-auto btn btn-sm btn-primary" @onclick="() => SetTheme(theme)">Set Theme</button> @* Needs to be an anonymous function as the function takes in a parameter *@
 					</h3>
 					<h6 class="small fw-bold mt-3">Palette</h6>
 					<div class="d-flex gap-0 align-items-center">
@@ -75,4 +76,9 @@
 		"850",
 		"900"
 	};
+
+	public async Task SetTheme(string theme)
+	{
+		await JS.InvokeVoidAsync("setTheme", theme);
+	}
 }

@@ -1,25 +1,27 @@
 :root {
-    --jat-title-font: 'Bebas Neue', sans-serif;
-    --jat-body-font: 'Montserrat', sans-serif;
+    --cf-title-font: 'Bebas Neue', sans-serif;
+    --cf-body-font: 'Montserrat', sans-serif;
 
-    --jat-dark-color: #212121;
-    --jat-light-color: #DEEEFB;
-    --jat-font-size: 1.1rem;
+    --cf-dark-color: #212121;
+    --cf-light-color: #DEEEFB;
+    --cf-font-size: 1.1rem;
+
+    --cf-title-color: var(--cf-dark-color);
 }
 
 html, body {
-    font-family: var(--jat-body-font);
-    font-size: var(--jat-font-size);
+    font-family: var(--cf-title-font);
+    font-size: var(--cf-title-font);
     height: 100%;
     min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--jat-title-font);
+    font-family: var(--cf-title-font);
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--jat-title-font);
+    font-family: var(--cf-title-font);
 }
 
 #app {

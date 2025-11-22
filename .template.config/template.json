@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Arun Pun",
+  "classifications": [
+    "Web",
+    "Blazor",
+    "WebAssembly"
+  ],
+  "identity": "ArunPun.BlazorWasmLayout",
+  "name": "Blazor WebAssembly With Branded Layout",
+  "shortName": "BlazorWasmLayout",
+  "sourceName": "BlazorLayout",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "guids": [
+   "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+   "0E47616E-A331-4B8D-80C8-36027153954B",
+   "84B652BF-81D2-42D3-8F5E-B9F7FBE18457"
+  ],
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "exclude": [
+        ".git/**",
+        ".github/**",
+        ".gitignore",
+        ".gitattributes",
+        ".template.config/**",
+        ".vs/**",
+        "**/bin/**",
+        "**/obj/**",
+        "README.md"
+      ]
+    }
+  ]
+}
